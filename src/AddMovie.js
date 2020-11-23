@@ -21,6 +21,7 @@ function AddMovie(props) {
             title: "",
             description: "",
             rate: 0,
+            url :"",
         })
     }
     const handleShow = () => setShow(true);
@@ -58,6 +59,12 @@ function handleChange (e){
                         <Form.Group controlId="formBasicPassword">
                             <Form.Label>Description of movie</Form.Label>
                             <Form.Control onChange ={handleChange} name="description" type="text" placeholder="description" />
+                        </Form.Group>
+                        <Form.Group controlId="formBasicEmail">
+                        
+                            <Form.Label>URL Trailer</Form.Label>
+                            <Form.Control onChange ={handleChange} name = "title"type="text" placeholder="URL Trailer" />
+
                         </Form.Group>
                         <StarRatingComponent name='star' onStarClick={(nextValue, prevValue, name)=>setNewMovie({...newMovie,rate:nextValue})}/>
                     </Form>

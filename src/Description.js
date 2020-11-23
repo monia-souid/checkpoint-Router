@@ -17,19 +17,19 @@ function Description({ movies, match }) {
 
                         <h2>{movie.title}</h2>
                         <p>{movie.description}</p>
+                        <ReactPlayer
+                            controls="true"
+                            width='100'
 
+                            url={movie.url} />
 
                     </div>
 
                 }
-                <ReactPlayer
-                controls="true"
-                width='100'
-                
-                url={movie.url} />
-                </div>
 
-                
+            </div>
+
+
         </div>
     );
 }

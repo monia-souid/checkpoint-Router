@@ -16,7 +16,7 @@ const MovieCard = ({ movie }) => {
                         <Card.Text>
                             {movie.description}
                         </Card.Text>
-                        <Link to={movie.url}><Button variant="primary">Trailer</Button></Link>
+                       
                         <Link to={`/description/${movie.title}`}><Button variant="primary">Description</Button></Link>
                         <div><StarRatingComponent name={movie.title} editing={true} value={movie.rate}/></div>
                         
